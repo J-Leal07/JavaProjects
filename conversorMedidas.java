@@ -1,8 +1,7 @@
 package projetoJava1;
-
 import java.util.Scanner;
 
-// Conversor básico de medidas, utiliza scanner, loop while, switch case, format, strings coloridas.
+// Conversor básico de medidas, utiliza Scanner, Loop While, Switch Case, Format(), Strings Coloridas.
 
 public class conversorMedidas {
 
@@ -11,9 +10,9 @@ public class conversorMedidas {
 		final String Yellow = "\u001B[33m";
 		final String Green = "\u001B[32m";
 		final String Cyan = "\u001B[36m";
-		final String Reset = "\u001B[0m";
 		final String Itálico = "\u001B[3m";
-		
+		final String Reset = "\u001B[0m";
+
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println(Yellow + "Seja bem-vindo(a) ao conversor de medidas!" + Reset);
@@ -24,19 +23,22 @@ public class conversorMedidas {
 		System.out.println("(3) Metro para Foot.");
 		System.out.println("(4) Quilograma para Libra" + Reset);
 		System.out.println();
-		System.out.println("Deseja continuar? (Sim ou Não)");
-		
+		System.out.println(Itálico + "Deseja continuar? (Sim ou Não)" + Reset);
 		String confirm = sc.next();
 		
+		// Loop While com as conversões, roda até o usuário negar a última pergunta
 		while (confirm.equalsIgnoreCase("Sim") || confirm.equalsIgnoreCase("S")) {
 			System.out.println(Itálico + "Obrigado por continuar conosco, por favor, digite o número da operação desejada. (1, 2, 3 ou 4)" + Reset);
+			
 			int op = sc.nextInt();
+			
 			switch (op) {
 			case 1:
 				System.out.println("Você escolheu a conversão de " + Yellow + "Real para Dólar." + Reset);
 				System.out.println("Digite a quantidade em reais:");
 				double real = sc.nextDouble();
-				double dolar = real / 5.16;
+				final double cotacaoDolar = 5.16;
+				double dolar = real / cotacaoDolar;
 				System.out.println(Green + "Resultado: " + Reset + "$" + String.format("%.2f", dolar));
 				break;
 			case 2:
@@ -63,11 +65,12 @@ public class conversorMedidas {
 			default:
 				System.out.println(Itálico + "Por favor, digite uma das opções." + Reset);
 			}
-			
+
 			System.out.println(Itálico + "Deseja continuar conosco? (Sim ou Não)" + Reset);
 			confirm = sc.next();
 		}
 		
+		// Conclusão do programa e fechamento do Scanner
 		System.out.println("Quando quiser ajuda, pode chamar!");
 		sc.close();
 
