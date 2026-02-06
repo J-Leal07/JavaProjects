@@ -1,7 +1,7 @@
 package projetoJava1;
 import java.util.Scanner;
 
-// Exercício proposto pelo ChatGPT (Exercício completo imagem "ex2" da pasta exercíciosJava)
+// Exercício proposto pelo ChatGPT (questão completa na imagem "ex2" da pasta exercíciosJava)
 
 public class exercicioJava2 {
 	void main() {
@@ -58,3 +58,4 @@ public class exercicioJava2 {
 		sc.close();
 	}
 }
+
