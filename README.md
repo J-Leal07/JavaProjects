@@ -13,3 +13,9 @@ Para rodar os códigos, é necessário:
 - Usar uma **IDE que suporte Java**
 
 Abra o projeto na IDE e execute o arquivo desejado.
+
+---
+
+## Exercícios
+
+1-3: Scanner, tipos primitivos, operadores aritméticos, if/else, while, break
