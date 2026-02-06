@@ -1,6 +1,7 @@
 package projetoJava1;
-
 import java.util.Scanner;
+
+// Exercício proposto pelo ChatGPT (questão completa na imagem "ex3" da pasta exercíciosJava)
 
 public class exercicioJava3 {
 	void main() {
@@ -39,3 +40,4 @@ public class exercicioJava3 {
 		sc.close();
 	}
 }
+
